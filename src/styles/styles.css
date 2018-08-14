@@ -1,0 +1,245 @@
+.popup {
+    position: relative;
+    margin: 100px auto;
+    display: block;
+    width: 125px;
+    height: 100px;
+    border-bottom: 1px dotted black;
+}
+
+.popup .popup-text-top-right {
+    width: 125px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    right: -110%;
+    margin-left: -60px;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.popup .popup-text-top-right::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -2.5%;
+    margin-top: -10px;
+    margin-left: 0px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    transform: rotate(180deg);
+}
+
+.popup .popup-text-top-left {
+    width: 125px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: -62.5%;
+    margin-left: -60px;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.popup .popup-text-top-left::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: -2.5%;
+    margin-top: -10px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    transform: rotate(180deg);
+}
+
+.popup .popup-text-bottom-left {
+    width: 125px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: -62.5%;
+    margin-left: -60px;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.popup .popup-text-bottom-left::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: -2.5%;
+    margin-bottom: -10px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    transform: rotate(0deg);
+}
+
+.popup .popup-text-bottom-right {
+    width: 125px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    right: -110%;
+    margin-left: -60px;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.popup .popup-text-bottom-right::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: -2.5%;
+    margin-bottom: -10px;
+    margin-left: -2px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    transform: rotate(0deg);
+}
+
+.popup .popup-text-top {
+    width: 125px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -90%;
+    left: 45%;
+    margin-left: -60px;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.popup .popup-text-top::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: 0px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    transform: rotate(0deg);
+}
+
+.popup .popup-text-bottom {
+    width: 125px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: -90%;
+    left: 45%;
+    margin-left: -60px;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.popup .popup-text-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-top: 0px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    transform: rotate(180deg);
+}
+
+.popup .popup-text-left {
+    width: 125px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: -70%;
+    margin-left: -60px;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.popup .popup-text-left::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -3.5%;
+    margin-top: -5px;
+    margin-right: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    transform: rotate(-90deg);
+}
+
+.popup .popup-text-right {
+    width: 125px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    right: -110%;
+    margin-left: -60px;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.popup .popup-text-right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -7.5%;
+    margin-top: -5px;
+    margin-right: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    transform: rotate(90deg);
+}
+
+.toggle--visible {
+    visibility: visible;
+    opacity: 1;
+}
